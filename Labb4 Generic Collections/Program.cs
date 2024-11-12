@@ -36,7 +36,11 @@
             Console.WriteLine();
 
             diner.ShowOrderCount();
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+            diner.CreateOrder(new Order(new List<MenuItem> { carbonara, carbonara, carbonara }, 1));
             Console.WriteLine();
+
 
         }
     }
