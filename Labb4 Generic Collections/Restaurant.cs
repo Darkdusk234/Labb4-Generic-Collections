@@ -48,5 +48,10 @@
             Console.WriteLine("Nästa order i kön:");
             orders.Peek().PrintOrder();
         }
+
+        public void ShowOrderCount()
+        {
+            Console.WriteLine($"Det är {orders.Count()} ordrar i kön.");
+        }
     }
 }
