@@ -17,6 +17,10 @@
 
             diner.ShowMenu();
 
+            diner.CreateOrder(new Order(new List<MenuItem> { vesuvio, taco, carbonara }, 23));
+            diner.CreateOrder(new Order(new List<MenuItem> { hamburger, hamburger, carbonara }, 15));
+            diner.CreateOrder(new Order(new List<MenuItem> { carbonara, taco }, 38));
+
         }
     }
 }
