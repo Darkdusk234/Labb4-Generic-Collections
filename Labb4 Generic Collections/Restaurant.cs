@@ -42,5 +42,11 @@
                 Console.WriteLine();
             }
         }
+
+        public void ShowNextOrder()
+        {
+            Console.WriteLine("Nästa order i kön:");
+            orders.Peek().PrintOrder();
+        }
     }
 }
