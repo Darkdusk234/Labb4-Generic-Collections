@@ -14,12 +14,17 @@
         public void ShowMenu()
         {
             int count = 1;
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("Meny:");
             foreach (var item in menu)
             {
                 Console.WriteLine($"{count}. {item.ToString}");
             }
+        }
+
+        public void CreateOrder(Order order)
+        {
+            orders.Enqueue(order);
+            Console.WriteLine($"Beställning nr {order.GetOrderID()} har lagts till.");
         }
     }
 }
