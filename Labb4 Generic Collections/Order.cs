@@ -16,5 +16,10 @@
             _orderItems = orderItems;
             _tableNumber = tableNumber;
         }
+
+        public int GetOrderID()
+        {
+            return _orderId;
+        }
     }
 }
