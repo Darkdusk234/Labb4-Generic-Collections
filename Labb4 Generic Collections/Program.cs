@@ -50,7 +50,7 @@
 
             diner.HandleOrder();
 
-            diner.ShowNextOrder();
+            diner.ShowOrderCount();
 
 
         }
