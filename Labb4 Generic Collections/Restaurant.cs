@@ -31,6 +31,7 @@
         public void HandleOrder()
         {
             Console.WriteLine($"Order {orders.Dequeue().GetOrderID()} är färdig.");
+            Console.WriteLine();
         }
 
         public void ShowOrders()
@@ -48,11 +49,13 @@
         {
             Console.WriteLine("Nästa order i kön:");
             orders.Peek().PrintOrder();
+            Console.WriteLine();
         }
 
         public void ShowOrderCount()
         {
             Console.WriteLine($"Det är {orders.Count()} ordrar i kön.");
+            Console.WriteLine();
         }
     }
 }

@@ -27,13 +27,10 @@
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
             diner.ShowOrderCount();
-            Console.WriteLine();
 
             diner.ShowNextOrder();
-            Console.WriteLine();
 
             diner.HandleOrder();
-            Console.WriteLine();
 
             diner.ShowOrderCount();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
