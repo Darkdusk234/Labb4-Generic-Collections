@@ -26,5 +26,10 @@
             orders.Enqueue(order);
             Console.WriteLine($"Beställning nr {order.GetOrderID()} har lagts till.");
         }
+
+        public void HandleOrder()
+        {
+            Console.WriteLine($"Order {orders.Dequeue().GetOrderID()} är färdig.");
+        }
     }
 }
