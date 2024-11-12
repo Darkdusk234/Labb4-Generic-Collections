@@ -21,5 +21,21 @@
         {
             return _orderId;
         }
+
+        public void PrintOrder()
+        {
+            decimal sum = 0;
+            Console.WriteLine($"Order {_orderId}:");
+
+            foreach (var item in _orderItems)
+            {
+                Console.WriteLine($"1 st {item.Name}");
+                sum += item.Price;
+            }
+
+            Console.WriteLine($"Summa: {sum:C}");
+
+            Console.WriteLine($"Till bord nummer {_tableNumber}");
+        }
     }
 }
