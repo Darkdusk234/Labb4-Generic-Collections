@@ -2,5 +2,7 @@
 {
     internal class Restaurant
     {
+        List<MenuItem> menu = new List<MenuItem>();
+        Queue<Order> orders = new Queue<Order>();
     }
 }
