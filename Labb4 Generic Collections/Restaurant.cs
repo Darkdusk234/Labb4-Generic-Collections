@@ -54,6 +54,11 @@
 
         public void ShowOrderCount()
         {
+            if(orders.Count() == 0)
+            {
+                Console.WriteLine("Det finns inga väntande ordrar i kön just nu.");
+                Console.WriteLine();
+            }
             Console.WriteLine($"Det är {orders.Count()} ordrar i kön.");
             Console.WriteLine();
         }
