@@ -13,6 +13,9 @@
             diner.AddToMenu(carbonara);
             MenuItem taco = new MenuItem(4, "Taco", 75);
             diner.AddToMenu(taco);
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+            diner.ShowMenu();
 
         }
     }

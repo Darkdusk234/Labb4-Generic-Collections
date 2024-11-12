@@ -17,7 +17,8 @@
             Console.WriteLine("Meny:");
             foreach (var item in menu)
             {
-                Console.WriteLine($"{count}. {item.ToString}");
+                Console.WriteLine($"{count}. {item.ToString()}");
+                count++;
             }
         }
 
