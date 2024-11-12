@@ -44,6 +44,13 @@
             diner.HandleOrder();
 
             diner.ShowOrderCount();
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+            diner.ShowNextOrder();
+
+            diner.HandleOrder();
+
+            diner.ShowNextOrder();
 
 
         }
