@@ -31,5 +31,16 @@
         {
             Console.WriteLine($"Order {orders.Dequeue().GetOrderID()} är färdig.");
         }
+
+        public void ShowOrders()
+        {
+            Console.WriteLine("Aktuella beställningar:");
+
+            foreach (var order in orders)
+            {
+                order.PrintOrder();
+                Console.WriteLine();
+            }
+        }
     }
 }
